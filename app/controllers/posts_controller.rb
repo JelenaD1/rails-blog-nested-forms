@@ -16,6 +16,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @tag = @post.tags.build
+    @tags = Tag.all
   end
 
   # GET /posts/1/edit
